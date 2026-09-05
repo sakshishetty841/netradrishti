@@ -216,3 +216,6 @@ docker-compose up --build
 - **ASHA Worker**: Patient registration, retinal photo upload, starting screening, viewing scan history.
 - **PHC Doctor**: Specialist review queue, referral urgency list, Grad-CAM heatmap inspection.
 - **Admin**: System-wide statistics, DR severity distribution, regional metrics, audit logs.
+
+
+### Priya Kumari
