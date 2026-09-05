@@ -1,0 +1,76 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Python environments & byte-code
+venv/
+**/venv/
+.venv/
+**/.venv/
+env/
+**/env/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# ML Models, Checkpoints & Large Weights
+*.pth
+*.pt
+*.onnx
+*.h5
+*.hdf5
+*.bin
+*.pkl
+*.pickle
+checkpoints/
+**/checkpoints/
+
+# Environment Variables & Credentials
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Databases & Storage
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+**/*.db
+**/*.sqlite
+
+# Local Build & Output Folders
+.next/
+**/.next/
+out/
+**/out/
+build/
+**/build/
+dist/
+**/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS & System Files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Deployment & IDE
+.vercel
+.idea/
+.vscode/
+*.tsbuildinfo
+next-env.d.ts

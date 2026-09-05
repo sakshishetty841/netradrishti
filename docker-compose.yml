@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+      - NODE_ENV=production
+      - DATABASE_URL=file:./dev.db
+      - JWT_SECRET=sih26038-diabetic-retinopathy-screening-secret-key-2026
+      - AI_SERVICE_URL=http://ai-service:8000
+    volumes:
+      - ./uploads:/app/uploads
+      - ./prisma:/app/prisma
+
+  ai-service:
+    build:
+      context: ./ai-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ai-service/model:/app/model
+      - ./ai-service/outputs:/app/outputs

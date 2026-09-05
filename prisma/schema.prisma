@@ -1,0 +1,53 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String    @id @default(uuid())
+  name      String
+  email     String    @unique
+  password  String
+  role      String    // ASHA, PHC_DOCTOR, ADMIN
+  createdAt DateTime  @default(now())
+
+  patients  Patient[] @relation("UserPatients")
+  scans     Scan[]    @relation("UserScans")
+}
+
+model Patient {
+  id          String   @id @default(uuid())
+  patientCode String   @unique
+  name        String
+  age         Int
+  gender      String   // Male, Female, Other
+  region      String   // e.g. Wardha, Satara, District PHC-4
+  createdBy   String
+  user        User     @relation("UserPatients", fields: [createdBy], references: [id])
+  createdAt   DateTime @default(now())
+
+  scans       Scan[]
+}
+
+model Scan {
+  id                 String    @id @default(uuid())
+  patientId          String
+  patient            Patient   @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  uploadedById       String
+  uploadedBy         User      @relation("UserScans", fields: [uploadedById], references: [id])
+  originalImageUrl   String
+  heatmapImageUrl    String?
+  status             String    @default("UPLOADED") // UPLOADED, ANALYZING, COMPLETED, FAILED, MODEL_NOT_READY, IMAGE_QUALITY_FAILED
+  predictedClass     Int?      // 0: NO_DR, 1: MILD, 2: MODERATE, 3: SEVERE, 4: PROLIFERATIVE
+  severity           String?   // NO_DR, MILD, MODERATE, SEVERE, PROLIFERATIVE
+  confidence         Float?
+  explanationText    String?
+  recommendationText String?
+  modelVersion       String?
+  createdAt          DateTime  @default(now())
+  analyzedAt         DateTime?
+}

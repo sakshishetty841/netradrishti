@@ -1,0 +1,131 @@
+{
+  "app": {
+    "title": "NetraDrishti",
+    "subtitle": "Explainable AI DR Screening",
+    "fullTitle": "Explainable AI for Diabetic Retinopathy Screening in Rural India"
+  },
+  "common": {
+    "language": "Language",
+    "login": "Sign In to Portal",
+    "logout": "Sign Out",
+    "refresh": "Refresh",
+    "cancel": "Cancel",
+    "save": "Save",
+    "actions": "Actions",
+    "viewDetails": "View Details",
+    "inspect": "Inspect",
+    "back": "Back to Dashboard",
+    "loading": "Loading...",
+    "status": "Status",
+    "timestamp": "Timestamp",
+    "required": "Required",
+    "disclaimer": "IMPORTANT MEDICAL DISCLAIMER: This AI screening output is a decision-support tool designed to assist health workers in identifying Diabetic Retinopathy. It does not provide a definitive medical diagnosis and does not replace evaluation by a qualified ophthalmologist.",
+    "medicalClarificationTitle": "Important Medical Clarification:",
+    "medicalClarificationText": "This application is a screening and clinical decision-support tool intended for patients already diagnosed with diabetes. It analyzes retinal fundus photos for signs of Diabetic Retinopathy (DR). It does NOT diagnose diabetes or replace an ophthalmologist."
+  },
+  "nav": {
+    "ashaPortal": "ASHA Portal",
+    "doctorQueue": "Doctor Review Queue",
+    "adminStats": "System Analytics"
+  },
+  "modelStatus": {
+    "ready": "AI Model Ready (EfficientNet-B0)",
+    "notReady": "AI Model: NOT_READY (Training Pending)"
+  },
+  "auth": {
+    "loginTitle": "Sign In to Portal",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "authenticating": "Authenticating...",
+    "signIn": "Sign In to Portal",
+    "quickDemoAccess": "Quick Demo Access",
+    "demoAsha": "ASHA Worker (asha@phc.in)",
+    "demoDoctor": "PHC Doctor (doctor@phc.in)",
+    "demoAdmin": "System Admin (admin@phc.in)",
+    "selectRole": "Select"
+  },
+  "patient": {
+    "registerPatient": "Register New Patient",
+    "patientCode": "Patient Code",
+    "name": "Patient Full Name",
+    "age": "Age (Years)",
+    "gender": "Gender",
+    "female": "Female",
+    "male": "Male",
+    "other": "Other",
+    "region": "PHC / Sub-Center Region",
+    "registeredPatients": "Registered Diabetic Patients",
+    "noPatients": "No patients found.",
+    "registerFirst": "Click 'Register New Patient' to add a record.",
+    "recentScanStatus": "Recent Scan Status",
+    "noScanUploaded": "No scan uploaded yet",
+    "registering": "Registering...",
+    "history": "Screening Scan History",
+    "registeredOn": "Registered"
+  },
+  "upload": {
+    "title": "Upload Retinal Fundus Photograph",
+    "subtitle": "Capture or upload a clear retinal photo for Diabetic Retinopathy screening and Grad-CAM visual explanation.",
+    "selectPatient": "Select Patient Record",
+    "choosePatient": "-- Choose Patient --",
+    "fileLabel": "Retinal Fundus Image (.jpg, .jpeg, .png)",
+    "clickToSelect": "Click to select image file",
+    "fileLimits": "Accepts JPEG / PNG up to 10MB",
+    "removePhoto": "Remove & Replace Photo",
+    "uploadingAndAnalyzing": "Uploading & Analyzing Scan...",
+    "startAnalysis": "Start AI Retinal Screening Analysis"
+  },
+  "result": {
+    "screeningVerdict": "AI Screening Result",
+    "confidence": "Confidence",
+    "originalRetina": "Original Retinal Photo",
+    "heatmapTitle": "Grad-CAM Heatmap Visual Explanation",
+    "whyPrediction": "Why did the model make this prediction?",
+    "recommendationTitle": "Screening Recommendation",
+    "modelNotReadyTitle": "AI Model Not Ready",
+    "modelNotReadyText": "The diabetic retinopathy model file (diabetic_retinopathy.pth) has not been trained or loaded into the AI service yet.",
+    "qualityCheckFailedTitle": "Image Quality Check Failed",
+    "qualityCheckFailedText": "The retinal photo quality is insufficient for reliable AI screening. Please capture another image.",
+    "reanalyze": "Re-run Analysis",
+    "returnToList": "Return to Patient List",
+    "modelVersion": "Model Version"
+  },
+  "severity": {
+    "NO_DR": "Class 0: NO DR (Normal Retina)",
+    "MILD": "Class 1: MILD DR",
+    "MODERATE": "Class 2: MODERATE DR",
+    "SEVERE": "Class 3: SEVERE DR",
+    "PROLIFERATIVE": "Class 4: PROLIFERATIVE DR"
+  },
+  "recommendations": {
+    "NO_DR": "Routine annual follow-up according to standard clinical guidance for diabetic patients.",
+    "MILD": "Routine ophthalmologist follow-up recommended within 6 to 12 months.",
+    "MODERATE": "Ophthalmologist review recommended within 4 to 6 weeks for detailed fundus examination.",
+    "SEVERE": "Prompt ophthalmologist review recommended within 2 weeks.",
+    "PROLIFERATIVE": "Urgent ophthalmologist evaluation recommended immediately for anti-VEGF or laser treatment assessment."
+  },
+  "doctor": {
+    "title": "PHC Doctor Review Queue",
+    "subtitle": "Review AI-screened retinal scans, inspect Grad-CAM heatmaps, and prioritize patients requiring specialist referral.",
+    "priorityAlert": "Priority Referral Alert",
+    "patientsRequireReview": "{count} Patients Require Review",
+    "filterSeverity": "Filter Severity",
+    "allScans": "All Scans",
+    "referralsOnly": "Referrals Only",
+    "referralUrgency": "Referral Urgency",
+    "fullReview": "Full Clinical Review & Heatmap"
+  },
+  "admin": {
+    "title": "System Analytics & Audit Logs",
+    "subtitle": "Real-time aggregate database statistics, DR severity distribution, regional metrics, and system audit trail.",
+    "totalPatients": "Total Registered Patients",
+    "totalScans": "Total Uploaded Scans",
+    "completedScans": "Completed AI Analyses",
+    "referredScans": "Specialist Referrals",
+    "severityDistribution": "DR Severity Distribution (Completed AI Scans)",
+    "regionBreakdown": "PHC Region Breakdown",
+    "auditLog": "System Audit Log",
+    "uploadedBy": "Uploaded By",
+    "predictedSeverity": "Predicted Severity"
+  }
+}

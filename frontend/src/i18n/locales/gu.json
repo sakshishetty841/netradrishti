@@ -1,0 +1,131 @@
+{
+  "app": {
+    "title": "નેત્રદ્રષ્ટિ",
+    "subtitle": "સમજૂતીત્મક AI ડાયાબિટીક રેટિનોપેથી સ્ક્રીનીંગ",
+    "fullTitle": "ગ્રામીણ ભારત માટે સમજૂતીત્મક AI ડાયાબિટીક રેટિનોપેથી સ્ક્રીનીંગ"
+  },
+  "common": {
+    "language": "ભાષા",
+    "login": "પોર્ટલમાં સાઇન ઇન કરો",
+    "logout": "સાઇન આઉટ",
+    "refresh": "રિફ્રેશ કરો",
+    "cancel": "રદ કરો",
+    "save": "સાચવો",
+    "actions": "ક્રિયાઓ",
+    "viewDetails": "વિગતો જુઓ",
+    "inspect": "તપાસ કરો",
+    "back": "ડેશબોર્ડ પર પાછા જાઓ",
+    "loading": "લોડ થઈ રહ્યું છે...",
+    "status": "સ્થિતિ",
+    "timestamp": "સમય મુદ્રા",
+    "required": "જરૂરી",
+    "disclaimer": "મહત્વપૂર્ણ તબીબી અસ્વીકરણ: આ AI સ્ક્રીનીંગ આઉટપુટ આરોગ્ય કાર્યકરોને મદદ કરવા માટેનું નિર્ણય-સહાય સાધન છે. તે નિશ્ચિત તબીબી નિદાન આપતું નથી અને આંખના નિષ્ણાતના મૂલ્યાંકનનું સ્થાન લેતું નથી.",
+    "medicalClarificationTitle": "મહત્વપૂર્ણ તબીબી સ્પષ્ટતા:",
+    "medicalClarificationText": "આ એપ્લિકેશન પહેલાથી જ ડાયાબિટીસ ધરાવતા દર્દીઓ માટે સ્ક્રીનીંગ સાધન છે. તે ડાયાબિટીક રેટિનોપેથી (DR) ના લક્ષણો માટે રેટિના ફોટાનું વિશ્લેષણ કરે છે. તે ડાયાબિટીસનું નિદાન કરતી નથી."
+  },
+  "nav": {
+    "ashaPortal": "આશા વર્કર પોર્ટલ",
+    "doctorQueue": "ડૉક્ટર સમીક્ષા કતાર",
+    "adminStats": "સિસ્ટમ એનાલિટિક્સ"
+  },
+  "modelStatus": {
+    "ready": "AI મોડેલ તૈયાર છે (EfficientNet-B0)",
+    "notReady": "AI મોડેલ: તૈયાર નથી (તાલીમ બાકી છે)"
+  },
+  "auth": {
+    "loginTitle": "પોર્ટલમાં સાઇન ઇન કરો",
+    "emailLabel": "ઇમેઇલ સરનામું",
+    "passwordLabel": "પાસવર્ડ",
+    "authenticating": "પ્રમાણિત થઈ રહ્યું છે...",
+    "signIn": "સાઇન ઇન કરો",
+    "quickDemoAccess": "ઝડપી ડેમો ઍક્સેસ",
+    "demoAsha": "આશા વર્કર (asha@phc.in)",
+    "demoDoctor": "પીએચસી ડૉક્ટર (doctor@phc.in)",
+    "demoAdmin": "સિસ્ટમ ઍડમિન (admin@phc.in)",
+    "selectRole": "પસંદ કરો"
+  },
+  "patient": {
+    "registerPatient": "નવા દર્દીની નોંધણી કરો",
+    "patientCode": "દર્દી કોડ",
+    "name": "દર્દીનું પૂરૂં નામ",
+    "age": "ઉંમર (વર્ષ)",
+    "gender": "જાતિ",
+    "female": "મહિલા",
+    "male": "પુરુષ",
+    "other": "અન્ય",
+    "region": "પીએચસી ક્ષેત્ર",
+    "registeredPatients": "નોંધાયેલ ડાયાબિટીક દર્દીઓ",
+    "noPatients": "કોઈ દર્દી મળ્યા નથી.",
+    "registerFirst": "નોંધણી કરવા માટે 'નવા દર્દીની નોંધણી કરો' પર ક્લિક કરો.",
+    "recentScanStatus": "તાજેતરના સ્કેનની સ્થિતિ",
+    "noScanUploaded": "હજુ સુધી કોઈ સ્કેન અપલોડ થયું નથી",
+    "registering": "નોંધણી થઈ રહી છે...",
+    "history": "સ્ક્રીનીંગ સ્કેન ઇતિહાસ",
+    "registeredOn": "નોંધાયેલ તારીખ"
+  },
+  "upload": {
+    "title": "રેટિના ફોટો અપલોડ કરો",
+    "subtitle": "ડાયાબિટીક રેટિનોપેથી સ્ક્રીનીંગ અને Grad-CAM વિઝ્યુઅલ સમજૂતી માટે સ્પષ્ટ રેટિના ફોટો અપલોડ કરો.",
+    "selectPatient": "દર્દીનો રેકોર્ડ પસંદ કરો",
+    "choosePatient": "-- દર્દી પસંદ કરો --",
+    "fileLabel": "રેટિના ઇમેજ (.jpg, .jpeg, .png)",
+    "clickToSelect": "ઇમેજ પસંદ કરવા માટે ક્લિક કરો",
+    "fileLimits": "10MB સુધીની JPEG / PNG માન્ય",
+    "removePhoto": "ફોટો દૂર કરો અને બદલો",
+    "uploadingAndAnalyzing": "અપલોડ અને વિશ્લેષણ થઈ રહ્યું છે...",
+    "startAnalysis": "AI રેટિના સ્ક્રીનીંગ વિશ્લેષણ શરૂ કરો"
+  },
+  "result": {
+    "screeningVerdict": "AI સ્ક્રીનીંગ પરિણામ",
+    "confidence": "વિશ્વાસ દર",
+    "originalRetina": "મૂળ રેટિના ફોટો",
+    "heatmapTitle": "Grad-CAM હીટમેપ વિઝ્યુઅલ સમજૂતી",
+    "whyPrediction": "મોડેલે આ આગાહી કેમ કરી?",
+    "recommendationTitle": "સ્ક્રીનીંગ ભલામણ",
+    "modelNotReadyTitle": "AI મોડેલ તૈયાર નથી",
+    "modelNotReadyText": "ડાયાબિટીક રેટિનોપેથી મોડેલ ફાઇલ (diabetic_retinopathy.pth) હજુ સુધી તાલીમ પામેલ નથી.",
+    "qualityCheckFailedTitle": "ઇમેજ ગુણવત્તા તપાસ નિષ્ફળ",
+    "qualityCheckFailedText": "વિશ્વસનીય AI સ્ક્રીનીંગ માટે ફોટો ગુણવત્તા અપૂર્ણ છે. કૃપા કરીને અન્ય ઇમેજ લો.",
+    "reanalyze": "ફરીથી વિશ્લેષણ કરો",
+    "returnToList": "દર્દીની યાદી પર પાછા જાઓ",
+    "modelVersion": "મોડેલ આવૃત્તિ"
+  },
+  "severity": {
+    "NO_DR": "વર્ગ 0: કોઈ DR નથી (સામાન્ય રેટિના)",
+    "MILD": "વર્ગ 1: હળવું (Mild DR)",
+    "MODERATE": "વર્ગ 2: મધ્યમ (Moderate DR)",
+    "SEVERE": "વર્ગ 3: ગંભીર (Severe DR)",
+    "PROLIFERATIVE": "વર્ગ 4: અત્યંત ગંભીર (Proliferative DR)"
+  },
+  "recommendations": {
+    "NO_DR": "ડાયાબિટીસના દર્દીઓ માટે ધોરણો અનુસાર નિયમિત વાર્ષિક તપાસ.",
+    "MILD": "6 થી 12 મહિનામાં આંખના નિષ્ણાત પાસે તપાસ કરાવાની ભલામણ.",
+    "MODERATE": "4 થી 6 અઠવાડિયામાં આંખના ડૉક્ટર પાસે વિગતવાર તપાસ કરાવવી.",
+    "SEVERE": "2 અઠવાડિયામાં ત્વરિત આંખના ડૉક્ટરની સલાહ લેવી.",
+    "PROLIFERATIVE": "તરત જ તાત્કાલિક આંખના નિષ્ણાત પાસે સારવાર અંગે સલાહ લેવી."
+  },
+  "doctor": {
+    "title": "ડૉક્ટર સમીક્ષા કતાર",
+    "subtitle": "AI સ્કેન તપાસો અને નિષ્ણાત પાસે મોકલવાની જરૂર હોય તેવા દર્દીઓને પ્રાથમિકતા આપો.",
+    "priorityAlert": "પ્રાથમિકતા રીફરલ ચેતવણી",
+    "patientsRequireReview": "{count} દર્દીઓને સમીક્ષાની જરૂર છે",
+    "filterSeverity": "ગંભીરતા ફિલ્ટર",
+    "allScans": "તમામ સ્કેન",
+    "referralsOnly": "માત્ર રીફરલ",
+    "referralUrgency": "તાત્કાલિક રીફરલ",
+    "fullReview": "સંપૂર્ણ તબીબી સમીક્ષા અને હીટમેપ"
+  },
+  "admin": {
+    "title": "સિસ્ટમ એનાલિટિક્સ અને ઓડિટ લોગ",
+    "subtitle": "લાઇવ ડેટાબેઝ આંકડા અને પ્રાદેશિક વિગતો.",
+    "totalPatients": "કુલ નોંધાયેલ દર્દીઓ",
+    "totalScans": "કુલ અપલોડ થયેલ સ્કેન",
+    "completedScans": "પૂર્ણ થયેલ AI વિશ્લેષણ",
+    "referredScans": "રીફર કરાયેલ દર્દીઓ",
+    "severityDistribution": "DR ગંભીરતા વિતરણ",
+    "regionBreakdown": "પ્રાદેશિક વિગતો",
+    "auditLog": "સિસ્ટમ ઓડિટ લોગ",
+    "uploadedBy": "અપલોડ કરનાર",
+    "predictedSeverity": "આગાહી કરેલ ગંભીરતા"
+  }
+}
